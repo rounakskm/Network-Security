@@ -1,0 +1,1297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+body {
+  background-color: #FFFFFF;
+  margin: 0px;
+  font: small Verdana, sans-serif;
+  font-size: 12px;
+  color: #1A1A1A;"
+}
+
+div.content {
+  width: 98%;
+  align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr.table_head {
+  background-color: #d5d5d5;
+}
+
+.diff {
+  white-space: pre;
+  font-family: monospace;
+}
+
+.diff.at {
+  color: #9932CC;
+}
+
+.diff.plus {
+  color: #006400;
+}
+
+.diff.minus {
+  color: #B22222;
+}
+
+div.footer {
+  text-align: center;
+}
+
+div.note, div.override {
+  padding:4px;
+  margin:3px;
+  margin-bottom:0px;
+  margin-top:0px;
+  border: 1px solid #CCCCCC;
+  border-top: 0px;
+  background-color: #ffff90;
+}
+
+.result_head {
+  padding:4px;
+  margin:3px;
+  margin-bottom:0px;
+  color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-bottom: 0px;
+  background:#d5d5d5;
+}
+
+.result_head.low {
+  background:#539dcb
+}
+
+.result_head.medium {
+  background:#f99f31
+}
+
+.result_head.high {
+  background:#cb1d17
+}
+
+.result_section {
+  padding:4px;
+  margin:3px;
+  margin-bottom:0px;
+  margin-top:0px;
+  border: 1px solid #CCCCCC;
+  border-top: 0px;
+}
+
+.location_float {
+  float: right;
+  text-align:right;
+}
+
+.delta_float {
+  float: left;
+  font-size: 24px;
+  border: 2px;
+  padding-left: 2px;
+  padding-right: 8px;
+  margin:0px;
+}
+
+.full_width {
+  width: 100%;
+}
+
+pre {
+ white-space: pre-wrap;
+ word-wrap: break-word;
+}
+        </style>
+<title>Scan Report</title>
+</head>
+<body><div class="content">
+<h1>Summary</h1>
+<p>
+          This document reports on the results of an automatic security scan.
+          The report first summarises the results found.  Then, for each host,
+          the report describes every issue found.  Please consider the
+          advice given in each description, in order to rectify the issue.
+        </p>
+<p>
+              Vendor security updates are not trusted.
+            </p>
+<p>
+              Overrides are on.  When a result has an override, this report uses the threat of the override.
+            </p>
+<p>
+              Information on overrides is included in the report.
+            </p>
+<p>
+              Notes are included in the report.
+            </p>
+<p>
+      This report might not show details of all issues that were found.
+      
+        It only lists hosts that produced issues.
+      
+        Issues with the threat level "Log" are not shown.
+      
+        Issues with the threat level "Debug" are not shown.
+      
+        Issues with the threat level "False Positive" are not shown.
+      Only results with a minimum QoD of 70 are shown. </p>
+<p>This report contains all 15 results selected by the filtering described above.  Before filtering there were 92 results.</p>
+<p>All dates are displayed using the timezone "Coordinated Universal Time", which is abbreviated "UTC".</p>
+<table>
+<tr>
+<td>Scan started:</td>
+<td><b>Thu Nov 2 19:22:21 2017 UTC</b></td>
+</tr>
+<tr>
+<td>Scan ended:</td>
+<td>Thu Nov 2 19:45:25 2017 UTC</td>
+</tr>
+<tr>
+<td>Task:</td>
+<td>Linux and windows vm scan 3</td>
+</tr>
+</table>
+<h2>Host Summary</h2>
+<table width="100%">
+<tr class="table_head">
+<td>Host</td>
+<td>Start</td>
+<td>End</td>
+<td>High</td>
+<td>Medium</td>
+<td>Low</td>
+<td>Log</td>
+<td>False Positive</td>
+</tr>
+<tr>
+<td><a href="#10.0.100.2">10.0.100.2</a></td>
+<td>Nov 2, 19:22:32</td>
+<td>Nov 2, 19:39:03</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="#10.0.100.1">10.0.100.1</a></td>
+<td>Nov 2, 19:22:32</td>
+<td>Nov 2, 19:45:25</td>
+<td>0</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Total: 2</td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>14</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
+<h1>Results per Host</h1>
+<h2 id="10.0.100.2">Host 10.0.100.2</h2>
+<table>
+<tr>
+<td>Scanning of this host started at:</td>
+<td>Thu Nov 2 19:22:32 2017 UTC</td>
+</tr>
+<tr>
+<td>Number of results:</td>
+<td>2</td>
+</tr>
+</table>
+<h3>Port Summary for Host 10.0.100.2</h3>
+<table width="100%">
+<tr class="table_head">
+<td>Service (Port)</td>
+<td>Threat Level</td>
+</tr>
+<tr>
+<td>general/tcp</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>135/tcp</td>
+<td>Medium</td>
+</tr>
+</table>
+<h3>Security Issues for Host 10.0.100.2</h3>
+<div class="result_head medium">
+<div class="location_float">135/tcp</div>
+<b>Medium</b>
+                     (CVSS: 5.0)
+                  <div class="full_width">
+            NVT:
+            DCE/RPC and MSRPC Services Enumeration Reporting
+            (OID: 1.3.6.1.4.1.25623.1.0.10736)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>Distributed Computing Environment / Remote Procedure Calls (DCE/RPC) or MSRPC services running
+  on the remote host can be enumerated by connecting on port 135 and doing the appropriate queries.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Here is the list of DCE/RPC or MSRPC services running on this host via the TCP protocol:
+
+Port: 49664/tcp
+
+     UUID: d95afe70-a6d5-4259-822e-2c84da1ddb0d, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49664]
+
+Port: 49665/tcp
+
+     UUID: 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d5, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49665]
+     Annotation: DHCP Client LRPC Endpoint
+
+     UUID: 3c4728c5-f0ab-448b-bda1-6ce01eb0a6d6, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49665]
+     Annotation: DHCPv6 Client LRPC Endpoint
+
+     UUID: f6beaff7-1e19-4fbb-9f8f-b89e2018337c, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49665]
+     Annotation: Event log TCPIP
+
+Port: 49666/tcp
+
+     UUID: 0d3c7f20-1c8d-4654-a1b3-51563b298bda, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: UserMgrCli
+
+     UUID: 201ef99a-7fa0-444c-9399-19ba84f12a1a, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: AppInfo
+
+     UUID: 2e6035b2-e8f1-41a7-a044-656b439c4c34, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: Proxy Manager provider server endpoint
+
+     UUID: 3a9ef155-691d-4449-8d05-09ad57031823, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+
+     UUID: 552d076a-cb29-4e44-8b6a-d15e59e2c0af, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: IP Transition Configuration endpoint
+
+     UUID: 58e604e8-9adb-4d2e-a464-3b0683fb1480, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: AppInfo
+
+     UUID: 5f54ce7d-5b79-4175-8584-cb65313a0e98, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: AppInfo
+
+     UUID: 86d35949-83c9-4044-b424-db363231fd0c, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+
+     UUID: b18fbab6-56f8-4702-84e0-41053293a869, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: UserMgrCli
+
+     UUID: c36be077-e14b-4fe9-8abc-e856ef4f048b, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: Proxy Manager client server endpoint
+
+     UUID: c49a5a70-8a7f-4e70-ba16-1e8f1f193ef1, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: Adh APIs
+
+     UUID: fb9a3757-cff0-4db0-b9fc-bd6c131612fd, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: AppInfo
+
+     UUID: fd7a0523-dc70-43dd-9b2e-9c5ed48225b1, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49666]
+     Annotation: AppInfo
+
+Port: 49668/tcp
+
+     UUID: 0b6edbfa-4a24-4fc6-8a23-942b1eca65d1, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49668]
+
+     UUID: 12345678-1234-abcd-ef00-0123456789ab, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49668]
+     Named pipe : spoolss
+     Win32 service or process : spoolsv.exe
+     Description : Spooler service
+
+     UUID: 4a452661-8290-4b36-8fbe-7f4093a94978, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49668]
+
+     UUID: 76f03f96-cdfd-44fc-a22c-64950a001209, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49668]
+
+     UUID: ae33069b-a2a8-46ee-a235-ddfd339be281, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49668]
+
+Port: 49669/tcp
+
+     UUID: 50abc2a4-574d-40b3-9d66-ee4fd5fba076, version 5
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49669]
+     Named pipe : dnsserver
+     Win32 service or process : dns.exe
+     Description : DNS Server
+
+Port: 49670/tcp
+
+     UUID: 367abb81-9844-35f1-ad32-98f038001003, version 2
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49670]
+
+Port: 49674/tcp
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ac, version 1
+     Endpoint: ncacn_ip_tcp:10.0.100.2[49674]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : SAM access
+
+Note: DCE/RPC or MSRPC services running on this host locally were identified. Reporting this list is not enabled by default due to the possible large size of this list. See the script preferences to enable this reporting.</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker may use this fact to gain more knowledge
+  about the remote host.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Filter incoming traffic to this ports.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            DCE/RPC and MSRPC Services Enumeration Reporting
+                (OID: 1.3.6.1.4.1.25623.1.0.10736)
+              </p>
+<p>
+                  Version used: $Revision: 6319 $</p>
+</div>
+<div class="result_head low">
+<div class="location_float">general/tcp</div>
+<b>Low</b>
+                     (CVSS: 2.6)
+                  <div class="full_width">
+            NVT:
+            TCP timestamps
+            (OID: 1.3.6.1.4.1.25623.1.0.80091)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote host implements TCP timestamps and therefore allows to compute
+  the uptime.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>It was detected that the host implements RFC1323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 734011
+Packet 2: 735170</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>To disable TCP timestamps on linux add the line 'net.ipv4.tcp_timestamps = 0' to
+  /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at runtime.</p>
+<p>  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'</p>
+<p>  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.</p>
+<p>  The default behavior of the TCP/IP stack on this Systems is to not use the
+  Timestamp options when initiating TCP connections, but use them if the TCP peer
+  that is initiating communication includes them in their synchronize (SYN) segment.</p>
+<p>  See also: http://www.microsoft.com/en-us/download/details.aspx?id=9152</p>
+</div>
+<div class="result_section">
+<b>Affected Software/OS</b><p>TCP/IPv4 implementations that implement RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The remote host implements TCP timestamps, as defined by RFC1323.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Special IP packets are forged and sent with a little delay in between to the
+  target IP. The responses are searched for a timestamps. If found, the timestamps are reported.</p>
+<p>
+            Details:
+            TCP timestamps
+                (OID: 1.3.6.1.4.1.25623.1.0.80091)
+              </p>
+<p>
+                  Version used: $Revision: 7277 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>http://www.ietf.org/rfc/rfc1323.txt</td>
+</tr></table></p>
+</div>
+<h2 id="10.0.100.1">Host 10.0.100.1</h2>
+<table>
+<tr>
+<td>Scanning of this host started at:</td>
+<td>Thu Nov 2 19:22:32 2017 UTC</td>
+</tr>
+<tr>
+<td>Number of results:</td>
+<td>13</td>
+</tr>
+</table>
+<h3>Port Summary for Host 10.0.100.1</h3>
+<table width="100%">
+<tr class="table_head">
+<td>Service (Port)</td>
+<td>Threat Level</td>
+</tr>
+<tr>
+<td>995/tcp</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>993/tcp</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>110/tcp</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>143/tcp</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>443/tcp</td>
+<td>Medium</td>
+</tr>
+</table>
+<h3>Security Issues for Host 10.0.100.1</h3>
+<div class="result_head medium">
+<div class="location_float">443/tcp</div>
+<b>Medium</b>
+                     (CVSS: 5.0)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Report Vulnerable Cipher Suites for HTTPS
+            (OID: 1.3.6.1.4.1.25623.1.0.108031)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine reports all SSL/TLS cipher suites accepted by a service
+  where attack vectors exists only on HTTPS services.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>'Vulnerable' cipher suites accepted by this service via the TLSv1.1 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)
+
+'Vulnerable' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>The configuration of this services should be changed so
+  that it does not accept the listed cipher suites anymore.</p>
+<p>  Please see the references for more resources supporting you with this task.</p>
+</div>
+<div class="result_section">
+<b>Affected Software/OS</b><p>Services accepting vulnerable SSL/TLS cipher suites via HTTPS.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>These rules are applied for the evaluation of the vulnerable cipher suites:</p>
+<p>  - 64-bit block cipher 3DES vulnerable to the SWEET32 attack (CVE-2016-2183).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            SSL/TLS: Report Vulnerable Cipher Suites for HTTPS
+                (OID: 1.3.6.1.4.1.25623.1.0.108031)
+              </p>
+<p>
+                  Version used: $Revision: 5232 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-2016-2183, CVE-2016-6329</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K17/1055, CB-K17/1026, CB-K17/0939, CB-K17/0917, CB-K17/0915, CB-K17/0877, CB-K17/0796, CB-K17/0724, CB-K17/0661, CB-K17/0657, CB-K17/0582, CB-K17/0581, CB-K17/0506, CB-K17/0504, CB-K17/0467, CB-K17/0345, CB-K17/0098, CB-K17/0089, CB-K17/0086, CB-K17/0082, CB-K16/1837, CB-K16/1830, CB-K16/1635, CB-K16/1630, CB-K16/1624, CB-K16/1622, CB-K16/1500, CB-K16/1465, CB-K16/1307, CB-K16/1296, DFN-CERT-2017-1885, DFN-CERT-2017-1831, DFN-CERT-2017-1821, DFN-CERT-2017-1785, DFN-CERT-2017-1626, DFN-CERT-2017-1326, DFN-CERT-2017-1239, DFN-CERT-2017-1238, DFN-CERT-2017-1090, DFN-CERT-2017-1060, DFN-CERT-2017-0968, DFN-CERT-2017-0947, DFN-CERT-2017-0946, DFN-CERT-2017-0904, DFN-CERT-2017-0816, DFN-CERT-2017-0746, DFN-CERT-2017-0677, DFN-CERT-2017-0675, DFN-CERT-2017-0611, DFN-CERT-2017-0609, DFN-CERT-2017-0522, DFN-CERT-2017-0519, DFN-CERT-2017-0482, DFN-CERT-2017-0351, DFN-CERT-2017-0090, DFN-CERT-2017-0089, DFN-CERT-2017-0088, DFN-CERT-2017-0086, DFN-CERT-2016-1943, DFN-CERT-2016-1937, DFN-CERT-2016-1732, DFN-CERT-2016-1726, DFN-CERT-2016-1715, DFN-CERT-2016-1714, DFN-CERT-2016-1588, DFN-CERT-2016-1555, DFN-CERT-2016-1391, DFN-CERT-2016-1378</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>https://bettercrypto.org/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://mozilla.github.io/server-side-tls/ssl-config-generator/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://sweet32.info/</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">995/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.3)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Report Weak Cipher Suites
+            (OID: 1.3.6.1.4.1.25623.1.0.103440)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine reports all Weak SSL/TLS cipher suites accepted by a service.</p>
+<p>  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port 25/tcp is reported.
+  If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure
+  cleartext communication.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.1 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.</p>
+<p>  Please see the references for more resources supporting you with this task.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>These rules are applied for the evaluation of the cryptographic strength:</p>
+<p>  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808).</p>
+<p>  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000).</p>
+<p>  - 1024 bit RSA authentication is considered to be insecure and therefore as weak.</p>
+<p>  - Any cipher considered to be secure for only the next 10 years is considered as medium</p>
+<p>  - Any other cipher is considered as strong</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            SSL/TLS: Report Weak Cipher Suites
+                (OID: 1.3.6.1.4.1.25623.1.0.103440)
+              </p>
+<p>
+                  Version used: $Revision: 5525 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-2013-2566, CVE-2015-2808, CVE-2015-4000</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K16/1593, CB-K16/1552, CB-K16/1102, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1751, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1514, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0986, CB-K15/0964, CB-K15/0962, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0889, CB-K15/0877, CB-K15/0850, CB-K15/0849, CB-K15/0834, CB-K15/0827, CB-K15/0802, CB-K15/0764, CB-K15/0733, CB-K15/0667, CB-K14/0935, CB-K13/0942, DFN-CERT-2017-1821, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-1168, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1853, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1038, DFN-CERT-2015-1016, DFN-CERT-2015-1012, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0937, DFN-CERT-2015-0925, DFN-CERT-2015-0884, DFN-CERT-2015-0881, DFN-CERT-2015-0879, DFN-CERT-2015-0866, DFN-CERT-2015-0844, DFN-CERT-2015-0800, DFN-CERT-2015-0737, DFN-CERT-2015-0696, DFN-CERT-2014-0977</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/warnmeldung_cb-k16-1465_update_6.html</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://bettercrypto.org/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://mozilla.github.io/server-side-tls/ssl-config-generator/</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">993/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.3)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Report Weak Cipher Suites
+            (OID: 1.3.6.1.4.1.25623.1.0.103440)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine reports all Weak SSL/TLS cipher suites accepted by a service.</p>
+<p>  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port 25/tcp is reported.
+  If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure
+  cleartext communication.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.1 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.</p>
+<p>  Please see the references for more resources supporting you with this task.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>These rules are applied for the evaluation of the cryptographic strength:</p>
+<p>  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808).</p>
+<p>  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000).</p>
+<p>  - 1024 bit RSA authentication is considered to be insecure and therefore as weak.</p>
+<p>  - Any cipher considered to be secure for only the next 10 years is considered as medium</p>
+<p>  - Any other cipher is considered as strong</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            SSL/TLS: Report Weak Cipher Suites
+                (OID: 1.3.6.1.4.1.25623.1.0.103440)
+              </p>
+<p>
+                  Version used: $Revision: 5525 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-2013-2566, CVE-2015-2808, CVE-2015-4000</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K16/1593, CB-K16/1552, CB-K16/1102, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1751, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1514, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0986, CB-K15/0964, CB-K15/0962, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0889, CB-K15/0877, CB-K15/0850, CB-K15/0849, CB-K15/0834, CB-K15/0827, CB-K15/0802, CB-K15/0764, CB-K15/0733, CB-K15/0667, CB-K14/0935, CB-K13/0942, DFN-CERT-2017-1821, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-1168, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1853, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1038, DFN-CERT-2015-1016, DFN-CERT-2015-1012, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0937, DFN-CERT-2015-0925, DFN-CERT-2015-0884, DFN-CERT-2015-0881, DFN-CERT-2015-0879, DFN-CERT-2015-0866, DFN-CERT-2015-0844, DFN-CERT-2015-0800, DFN-CERT-2015-0737, DFN-CERT-2015-0696, DFN-CERT-2014-0977</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/warnmeldung_cb-k16-1465_update_6.html</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://bettercrypto.org/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://mozilla.github.io/server-side-tls/ssl-config-generator/</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">143/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.3)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Report Weak Cipher Suites
+            (OID: 1.3.6.1.4.1.25623.1.0.103440)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine reports all Weak SSL/TLS cipher suites accepted by a service.</p>
+<p>  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port 25/tcp is reported.
+  If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure
+  cleartext communication.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.1 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.</p>
+<p>  Please see the references for more resources supporting you with this task.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>These rules are applied for the evaluation of the cryptographic strength:</p>
+<p>  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808).</p>
+<p>  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000).</p>
+<p>  - 1024 bit RSA authentication is considered to be insecure and therefore as weak.</p>
+<p>  - Any cipher considered to be secure for only the next 10 years is considered as medium</p>
+<p>  - Any other cipher is considered as strong</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            SSL/TLS: Report Weak Cipher Suites
+                (OID: 1.3.6.1.4.1.25623.1.0.103440)
+              </p>
+<p>
+                  Version used: $Revision: 5525 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-2013-2566, CVE-2015-2808, CVE-2015-4000</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K16/1593, CB-K16/1552, CB-K16/1102, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1751, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1514, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0986, CB-K15/0964, CB-K15/0962, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0889, CB-K15/0877, CB-K15/0850, CB-K15/0849, CB-K15/0834, CB-K15/0827, CB-K15/0802, CB-K15/0764, CB-K15/0733, CB-K15/0667, CB-K14/0935, CB-K13/0942, DFN-CERT-2017-1821, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-1168, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1853, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1038, DFN-CERT-2015-1016, DFN-CERT-2015-1012, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0937, DFN-CERT-2015-0925, DFN-CERT-2015-0884, DFN-CERT-2015-0881, DFN-CERT-2015-0879, DFN-CERT-2015-0866, DFN-CERT-2015-0844, DFN-CERT-2015-0800, DFN-CERT-2015-0737, DFN-CERT-2015-0696, DFN-CERT-2014-0977</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/warnmeldung_cb-k16-1465_update_6.html</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://bettercrypto.org/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://mozilla.github.io/server-side-tls/ssl-config-generator/</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">110/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.3)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Report Weak Cipher Suites
+            (OID: 1.3.6.1.4.1.25623.1.0.103440)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>This routine reports all Weak SSL/TLS cipher suites accepted by a service.</p>
+<p>  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port 25/tcp is reported.
+  If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure
+  cleartext communication.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.1 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.2 protocol:
+
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_SEED_CBC_SHA</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.</p>
+<p>  Please see the references for more resources supporting you with this task.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>These rules are applied for the evaluation of the cryptographic strength:</p>
+<p>  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808).</p>
+<p>  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000).</p>
+<p>  - 1024 bit RSA authentication is considered to be insecure and therefore as weak.</p>
+<p>  - Any cipher considered to be secure for only the next 10 years is considered as medium</p>
+<p>  - Any other cipher is considered as strong</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>
+            Details:
+            SSL/TLS: Report Weak Cipher Suites
+                (OID: 1.3.6.1.4.1.25623.1.0.103440)
+              </p>
+<p>
+                  Version used: $Revision: 5525 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>CVE:</td>
+<td>CVE-2013-2566, CVE-2015-2808, CVE-2015-4000</td>
+</tr>
+<tr valign="top">
+<td>CERT:</td>
+<td>CB-K16/1593, CB-K16/1552, CB-K16/1102, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1751, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1514, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0986, CB-K15/0964, CB-K15/0962, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0889, CB-K15/0877, CB-K15/0850, CB-K15/0849, CB-K15/0834, CB-K15/0827, CB-K15/0802, CB-K15/0764, CB-K15/0733, CB-K15/0667, CB-K14/0935, CB-K13/0942, DFN-CERT-2017-1821, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-1168, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1853, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1038, DFN-CERT-2015-1016, DFN-CERT-2015-1012, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0937, DFN-CERT-2015-0925, DFN-CERT-2015-0884, DFN-CERT-2015-0881, DFN-CERT-2015-0879, DFN-CERT-2015-0866, DFN-CERT-2015-0844, DFN-CERT-2015-0800, DFN-CERT-2015-0737, DFN-CERT-2015-0696, DFN-CERT-2014-0977</td>
+</tr>
+<tr valign="top">
+<td>Other:</td>
+<td>https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/warnmeldung_cb-k16-1465_update_6.html</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://bettercrypto.org/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://mozilla.github.io/server-side-tls/ssl-config-generator/</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">995/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.0)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+            (OID: 1.3.6.1.4.1.25623.1.0.105880)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote service is using a SSL/TLS certificate chain that has been signed using a cryptographically weak hashing algorithm.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#726F6F74406E65747365632D74656D706C617465,CN=netsec-template,OU=netsec-template,O=Dovecot mail server
+Signature Algorithm:  sha1WithRSAEncryption</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Servers that use SSL/TLS certificates signed using an SHA-1 signature will need to obtain new SHA-2 signed SSL/TLS certificates to avoid these
+  web browser SSL/TLS certificate warnings.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>Secure Hash Algorithm 1 (SHA-1) is considered cryptographically weak and not secure enough for ongoing use. Beginning as late as January 2017
+  and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when users visit web sites that use SHA-1 signed Secure Socket Layer (SSL)
+  certificates.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Check which algorithm was used to sign the remote SSL/TLS Certificate.</p>
+<p>
+            Details:
+            SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+                (OID: 1.3.6.1.4.1.25623.1.0.105880)
+              </p>
+<p>
+                  Version used: $Revision: 4781 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/</td>
+</tr></table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">993/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.0)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+            (OID: 1.3.6.1.4.1.25623.1.0.105880)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote service is using a SSL/TLS certificate chain that has been signed using a cryptographically weak hashing algorithm.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#726F6F74406E65747365632D74656D706C617465,CN=netsec-template,OU=netsec-template,O=Dovecot mail server
+Signature Algorithm:  sha1WithRSAEncryption</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Servers that use SSL/TLS certificates signed using an SHA-1 signature will need to obtain new SHA-2 signed SSL/TLS certificates to avoid these
+  web browser SSL/TLS certificate warnings.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>Secure Hash Algorithm 1 (SHA-1) is considered cryptographically weak and not secure enough for ongoing use. Beginning as late as January 2017
+  and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when users visit web sites that use SHA-1 signed Secure Socket Layer (SSL)
+  certificates.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Check which algorithm was used to sign the remote SSL/TLS Certificate.</p>
+<p>
+            Details:
+            SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+                (OID: 1.3.6.1.4.1.25623.1.0.105880)
+              </p>
+<p>
+                  Version used: $Revision: 4781 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/</td>
+</tr></table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">143/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.0)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+            (OID: 1.3.6.1.4.1.25623.1.0.105880)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote service is using a SSL/TLS certificate chain that has been signed using a cryptographically weak hashing algorithm.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#726F6F74406E65747365632D74656D706C617465,CN=netsec-template,OU=netsec-template,O=Dovecot mail server
+Signature Algorithm:  sha1WithRSAEncryption</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Servers that use SSL/TLS certificates signed using an SHA-1 signature will need to obtain new SHA-2 signed SSL/TLS certificates to avoid these
+  web browser SSL/TLS certificate warnings.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>Secure Hash Algorithm 1 (SHA-1) is considered cryptographically weak and not secure enough for ongoing use. Beginning as late as January 2017
+  and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when users visit web sites that use SHA-1 signed Secure Socket Layer (SSL)
+  certificates.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Check which algorithm was used to sign the remote SSL/TLS Certificate.</p>
+<p>
+            Details:
+            SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+                (OID: 1.3.6.1.4.1.25623.1.0.105880)
+              </p>
+<p>
+                  Version used: $Revision: 4781 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/</td>
+</tr></table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">110/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.0)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+            (OID: 1.3.6.1.4.1.25623.1.0.105880)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The remote service is using a SSL/TLS certificate chain that has been signed using a cryptographically weak hashing algorithm.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#726F6F74406E65747365632D74656D706C617465,CN=netsec-template,OU=netsec-template,O=Dovecot mail server
+Signature Algorithm:  sha1WithRSAEncryption</pre>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Mitigation</p>
+<p>Servers that use SSL/TLS certificates signed using an SHA-1 signature will need to obtain new SHA-2 signed SSL/TLS certificates to avoid these
+  web browser SSL/TLS certificate warnings.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>Secure Hash Algorithm 1 (SHA-1) is considered cryptographically weak and not secure enough for ongoing use. Beginning as late as January 2017
+  and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when users visit web sites that use SHA-1 signed Secure Socket Layer (SSL)
+  certificates.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Check which algorithm was used to sign the remote SSL/TLS Certificate.</p>
+<p>
+            Details:
+            SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+                (OID: 1.3.6.1.4.1.25623.1.0.105880)
+              </p>
+<p>
+                  Version used: $Revision: 4781 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table><tr valign="top">
+<td>Other:</td>
+<td>https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/</td>
+</tr></table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">995/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.0)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerabili...
+                
+            (OID: 1.3.6.1.4.1.25623.1.0.106223)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The SSL/TLS service uses Diffie-Hellman groups with insufficient strength
+  (key size &lt; 2048).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Server Temporary Key Size: 1024 bits</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker might be able to decrypt the SSL/TLS communication offline.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Workaround</p>
+<p>Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group. (see https://weakdh.org/sysadmin.html).</p>
+<p>  For Apache Web Servers:
+  Beginning with version 2.4.7, mod_ssl will use DH parameters which include primes with lengths of more than 1024 bits.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The Diffie-Hellman group are some big numbers that are used as base for
+  the DH computations. They can be, and often are, fixed. The security of the final secret depends on the size
+  of these parameters. It was found that 512 and 768 bits to be weak, 1024 bits to be breakable by really
+  powerful attackers like governments.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Checks the DHE temporary public key size.</p>
+<p>
+            Details:
+            <abbr title="SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability (1.3.6.1.4.1.25623.1.0.106223)">SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerabili...</abbr>
+                (OID: 1.3.6.1.4.1.25623.1.0.106223)
+              </p>
+<p>
+                  Version used: $Revision: 7578 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>https://weakdh.org/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://weakdh.org/sysadmin.html</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">993/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.0)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerabili...
+                
+            (OID: 1.3.6.1.4.1.25623.1.0.106223)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The SSL/TLS service uses Diffie-Hellman groups with insufficient strength
+  (key size &lt; 2048).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Server Temporary Key Size: 1024 bits</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker might be able to decrypt the SSL/TLS communication offline.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Workaround</p>
+<p>Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group. (see https://weakdh.org/sysadmin.html).</p>
+<p>  For Apache Web Servers:
+  Beginning with version 2.4.7, mod_ssl will use DH parameters which include primes with lengths of more than 1024 bits.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The Diffie-Hellman group are some big numbers that are used as base for
+  the DH computations. They can be, and often are, fixed. The security of the final secret depends on the size
+  of these parameters. It was found that 512 and 768 bits to be weak, 1024 bits to be breakable by really
+  powerful attackers like governments.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Checks the DHE temporary public key size.</p>
+<p>
+            Details:
+            <abbr title="SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability (1.3.6.1.4.1.25623.1.0.106223)">SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerabili...</abbr>
+                (OID: 1.3.6.1.4.1.25623.1.0.106223)
+              </p>
+<p>
+                  Version used: $Revision: 7578 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>https://weakdh.org/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://weakdh.org/sysadmin.html</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">143/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.0)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerabili...
+                
+            (OID: 1.3.6.1.4.1.25623.1.0.106223)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The SSL/TLS service uses Diffie-Hellman groups with insufficient strength
+  (key size &lt; 2048).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Server Temporary Key Size: 1024 bits</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker might be able to decrypt the SSL/TLS communication offline.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Workaround</p>
+<p>Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group. (see https://weakdh.org/sysadmin.html).</p>
+<p>  For Apache Web Servers:
+  Beginning with version 2.4.7, mod_ssl will use DH parameters which include primes with lengths of more than 1024 bits.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The Diffie-Hellman group are some big numbers that are used as base for
+  the DH computations. They can be, and often are, fixed. The security of the final secret depends on the size
+  of these parameters. It was found that 512 and 768 bits to be weak, 1024 bits to be breakable by really
+  powerful attackers like governments.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Checks the DHE temporary public key size.</p>
+<p>
+            Details:
+            <abbr title="SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability (1.3.6.1.4.1.25623.1.0.106223)">SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerabili...</abbr>
+                (OID: 1.3.6.1.4.1.25623.1.0.106223)
+              </p>
+<p>
+                  Version used: $Revision: 7578 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>https://weakdh.org/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://weakdh.org/sysadmin.html</td>
+</tr>
+</table></p>
+</div>
+<div class="result_head medium">
+<div class="location_float">110/tcp</div>
+<b>Medium</b>
+                     (CVSS: 4.0)
+                  <div class="full_width">
+            NVT:
+            SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerabili...
+                
+            (OID: 1.3.6.1.4.1.25623.1.0.106223)
+          </div>
+</div>
+<div class="result_section">
+<b>Summary</b><p>The SSL/TLS service uses Diffie-Hellman groups with insufficient strength
+  (key size &lt; 2048).</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Result</b><pre>Server Temporary Key Size: 1024 bits</pre>
+</div>
+<div class="result_section">
+<b>Impact</b><p>An attacker might be able to decrypt the SSL/TLS communication offline.</p>
+</div>
+<div class="result_section">
+<b>Solution</b><p><b>Solution type: </b>Workaround</p>
+<p>Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group. (see https://weakdh.org/sysadmin.html).</p>
+<p>  For Apache Web Servers:
+  Beginning with version 2.4.7, mod_ssl will use DH parameters which include primes with lengths of more than 1024 bits.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Insight</b><p>The Diffie-Hellman group are some big numbers that are used as base for
+  the DH computations. They can be, and often are, fixed. The security of the final secret depends on the size
+  of these parameters. It was found that 512 and 768 bits to be weak, 1024 bits to be breakable by really
+  powerful attackers like governments.</p>
+</div>
+<div class="result_section">
+<b>Vulnerability Detection Method</b><p>Checks the DHE temporary public key size.</p>
+<p>
+            Details:
+            <abbr title="SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability (1.3.6.1.4.1.25623.1.0.106223)">SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerabili...</abbr>
+                (OID: 1.3.6.1.4.1.25623.1.0.106223)
+              </p>
+<p>
+                  Version used: $Revision: 7578 $</p>
+</div>
+<div class="result_section">
+<b>References</b><br><p><table>
+<tr valign="top">
+<td>Other:</td>
+<td>https://weakdh.org/</td>
+</tr>
+<tr valign="top">
+<td></td>
+<td>https://weakdh.org/sysadmin.html</td>
+</tr>
+</table></p>
+</div>
+<div class="footer">
+                  This file was automatically generated.
+                </div>
+</div></body>
+</html>
